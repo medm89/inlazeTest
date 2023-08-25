@@ -10,5 +10,8 @@
 ```
  docker-compose up -d
 ```
-1. Levantar la BD
+5. Levantar el proyecto
+```
+ npm start dev
+```
 

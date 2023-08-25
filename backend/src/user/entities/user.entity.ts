@@ -47,6 +47,13 @@ export class User {
     this.created_at = new Date();
     this.updated_at = new Date();
   }
+  
+  @BeforeInsert()
+  checkFields(){
+    this.email = this.email.toLowerCase().trim();
+    this.full_name = this.full_name.toUpperCase();
+
+  }
 
   @BeforeUpdate()
   setUpdateDate() {
